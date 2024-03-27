@@ -34,6 +34,7 @@ class histogram1d:
     """
     def __init__(self, arrayInput, nbins, binWidth, zeroValue):
         # Initialize Object Attributes
+        # arrays are float32 type.
         self._data = np.asanyarray(arrayInput, dtype=np.float32)
         self.nbins = nbins
         self.binWidth = np.float32(binWidth)
